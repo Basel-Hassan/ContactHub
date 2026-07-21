@@ -1,0 +1,166 @@
+@media screen and (max-width: 1280px) {
+  .fs-xl-8 {
+    font-size: 0.5rem;
+  }
+
+  .fs-xl-10 {
+    font-size: 0.625rem;
+  }
+
+  .fs-xl-11 {
+    font-size: 0.6875rem;
+  }
+
+  .fs-xl-12 {
+    font-size: 0.75rem;
+  }
+
+  .fs-xl-14 {
+    font-size: 0.875rem;
+  }
+
+  .lh-xl-x-small {
+    line-height: var(--line-height-xs);
+  }
+
+  .lh-xl-small {
+    line-height: var(--line-height-sm);
+  }
+
+  .py-xl-14 {
+    padding-block: 0.875rem;
+  }
+
+  .px-xl-16 {
+    padding-inline: 1rem;
+  }
+
+  .hidden-xl {
+    display: none;
+  }
+
+  .favorite-icon,
+  .emergency-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .favorite-list-item,
+  .emergency-list-item {
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    padding: 0.5rem;
+  }
+
+  .favorite-list-item {
+    &:hover {
+      background-color: var(--light-6-color);
+      border-color: #fee685;
+      .favorite-phone-link {
+        background-color: var(--light-blue-2-color);
+        color: var(--green-3-color);
+      }
+    }
+  }
+
+  .emergency-list-item {
+    &:hover {
+      background-color: var(--light-16-color);
+      border-color: #ffccd3;
+      .emergency-phone-link {
+        background-color: var(--light-18-color);
+        color: var(--red-5-color);
+      }
+    }
+  }
+
+  .favorite-phone-link,
+  .emergency-phone-link {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #favContainer {
+    --bs-gutter-x: 0.5rem;
+    --bs-gutter-y: 0.5rem;
+  }
+
+  #emrContainer {
+    --bs-gutter-x: 0.5rem;
+    --bs-gutter-y: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .px-sm-16 {
+    padding-inline: 1rem;
+  }
+
+  .py-sm-16 {
+    padding-block: 1rem;
+  }
+
+  .pb-sm-24 {
+    padding-bottom: 1.5rem;
+  }
+
+  .pt-sm-88 {
+    padding-top: 5.5rem;
+  }
+
+  .gap-sm-12 {
+    gap: 0.75rem !important;
+  }
+
+  .fs-sm-11 {
+    font-size: 0.6875rem;
+  }
+
+  .fs-sm-14 {
+    font-size: 0.875rem;
+  }
+
+  .fs-sm-20 {
+    font-size: 1.25rem;
+  }
+
+  .fs-sm-24 {
+    font-size: 1.5rem;
+  }
+
+  .lh-sm-xl {
+    line-height: var(--line-height-xl);
+  }
+
+  .hidden-sm {
+    display: none !important;
+  }
+
+  .navParent {
+    height: 4rem;
+  }
+
+  .navIcon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .navBtnsImg {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .mini-board {
+    --bs-gutter-x: 0.75rem;
+    --bs-gutter-y: 0.75rem;
+  }
+
+  .board-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+}
