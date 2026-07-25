@@ -125,7 +125,13 @@ function clearForm() {
             class="change-photo-icon text-white fw-bold lh-3xl fs-30 rounded-circle d-flex justify-content-center align-items-center">
             <i class="fa-solid fa-user"></i>
         </div>
-        `
+        `;
+        nameInValid.classList.add("d-none")
+        phoneInValid.classList.add("d-none")
+        emailInValid.classList.add("d-none")
+        fullName.classList.remove("invalid-border")
+        phoneNum.classList.remove("invalid-border")
+        email.classList.remove("invalid-border")
 }
 
 // Display Function
@@ -416,6 +422,7 @@ saveBtn.addEventListener("click" , function(e) {
         text: "Please enter a name for the contact!",
         icon: "error"
         });
+        
     }else if(phoneNum.value == "") {
         return Swal.fire({
         title: "Missing Phone",
@@ -850,11 +857,14 @@ function validateName() {
     var nameRegex = /^[A-Za-z\u0600-\u06FF ]{2,50}$/;
     if(nameRegex.test(fullName.value)) {
         nameInValid.classList.add("d-none")
+        fullName.classList.remove("invalid-border")
         return true
     }else {
         nameInValid.classList.remove("d-none")
+        fullName.classList.add("invalid-border")
         if (fullName.value == "") {
         nameInValid.classList.add("d-none")
+        fullName.classList.remove("invalid-border")
         }
         return false
     }
@@ -865,11 +875,14 @@ function validatePhone() {
     var phoneRegex = /^(\+2)?01[0125]\d{8}$/;
         if(phoneRegex.test(phoneNum.value)) {
         phoneInValid.classList.add("d-none")
+        phoneNum.classList.remove("invalid-border")
         return true
     }else {
         phoneInValid.classList.remove("d-none")
+        phoneNum.classList.add("invalid-border")
         if (phoneNum.value == "") {
         phoneInValid.classList.add("d-none")
+        phoneNum.classList.remove("invalid-border")
         }
         return false
     }
@@ -880,11 +893,14 @@ function validateEmail() {
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if(emailRegex.test(email.value)) {
         emailInValid.classList.add("d-none")
+        email.classList.remove("invalid-border")
         return true
     }else {
         emailInValid.classList.remove("d-none")
+        email.classList.add("invalid-border")
         if (email.value == "") {
         emailInValid.classList.add("d-none")
+        email.classList.remove("invalid-border")
         }
         return false
     }
