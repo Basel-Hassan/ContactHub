@@ -424,7 +424,7 @@ saveBtn.addEventListener("click" , function(e) {
         });
     }
 
-    for (let i = 0; i < cardsArr.length; i++) {
+    for (i = 0; i < cardsArr.length; i++) {
         if (i === updateIndex) continue;
         
         if (phoneNum.value == cardsArr[i].phone) {
@@ -448,7 +448,7 @@ saveBtn.addEventListener("click" , function(e) {
         text: "Please enter a valid Egyptian phone number (e.g., 01012345678 or +201012345678)",
         icon: "error"
         });
-    }else if (!validateEmail()) {
+    }else if (email.value && !validateEmail()) {
         return Swal.fire({
         title: "Invalid Email",
         text: "Please enter a valid email address",
